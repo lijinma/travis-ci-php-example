@@ -33,6 +33,13 @@ class HelloWorldTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('Hello Bar', $helloWorld->hello('Bar'));
     }
 
+    public function testHelloJinma()
+    {
+        $helloWorld = new HelloWorld($this->pdo);
+
+        $this->assertEquals('Hello Jinma', $helloWorld->hello('Jinma'));
+    }
+
     public function testWhat()
     {
         $helloWorld = new HelloWorld($this->pdo);
